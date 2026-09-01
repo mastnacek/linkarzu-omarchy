@@ -8,58 +8,51 @@ A dark, high-contrast theme for [Omarchy](https://omarchy.org/) built around the
 |------|-------|
 | Background | `#0d1116` |
 | Foreground | `#ebfafa` |
-| Accent | `#987afb` |
+| Accent | `#37f499` (Neon Green) |
 | Red | `#f16c75` |
 | Green | `#37f499` |
 | Yellow | `#f1fc79` |
 | Cyan | `#04d1f9` |
 | Blue | `#5fa9f4` |
-| Magenta | `#987afb` |
+| Magenta / Purple | `#987afb` |
 
-## What It Configures
+## Theme Components
 
-This theme provides only the color palette and wallpaper. Omarchy's template system auto-generates configs for:
+- **`colors.toml`** — Core 20-color palette.
+- **`hyprland.lua`** — Active border: `#37f499` (neon green), Inactive border: `rgb(1c3d2d)` (muted grayish green).
+- **`kitty.conf`** — Terminal colors with neon green active tab / border and dark purple inactive tabs.
+- **`icons.theme`** — Set to `Gruvbox-Plus-Dark` with custom neon green folder accents.
+- **`backgrounds/`** — `1-skyrim-dragon.jpg`.
 
-- Alacritty, Kitty, Foot, Ghostty (terminals)
-- Neovim, Helix, VS Code: (editors)
+Omarchy's template system auto-generates matching configs for:
+- Alacritty, Foot, Ghostty (terminals)
+- Neovim, Helix, VS Code (editors)
 - btop (system monitor)
-- Hyprland (window borders)
-- Omarchy Shell (bar, notifications, OSD)
-- Chromium/Chrome/Edge/Brave (browser theme)
-- Obsidian (notes app CSS)
-- Claude Desktop, Pi harness (AI apps)
+- Omarchy Shell (top bar, notifications, OSD)
+- Chromium / Chrome / Brave / Edge (browser policy)
+- Obsidian (notes CSS)
+- Claude Desktop, Pi harness (AI tools)
 
-## Icon Theme
+## Icons
 
-### Default (no action required)
-The theme ships with `icons.theme` set to **Yaru-purple**, which is pre-installed on Omarchy systems. This matches the theme's purple accent color out of the box.
+### Gruvbox Plus Dark (Active)
+The theme references **`Gruvbox-Plus-Dark`** in `icons.theme`.
 
-### Optional: Gruvbox Plus Icons
-For a more cohesive look, you can install the [Gruvbox Plus icon pack](https://www.gnome-look.org/p/1961046) by SylEleuth:
-
-**Option A — Download manually:**
-1. Download `gruvbox-plus-icon-pack-*.zip` from the [GitHub releases](https://github.com/SylEleuth/gruvbox-plus-icon-pack/releases) or [gnome-look.org](https://www.gnome-look.org/p/1961046)
-2. Extract it to your icons directory:
-   ```bash
-   mkdir -p ~/.icons
-   unzip gruvbox-plus-icon-pack-*.zip -d ~/.icons/
-   ```
-3. Switch the theme to use it:
-   ```bash
-   echo "Gruvbox-Plus" > ~/.config/omarchy/themes/linkarzu-omarchy/icons.theme
-   omarchy theme set linkarzu-omarchy
-   ```
-
-**Option B — AUR (different icon pack):**
-There is a separate `gruvbox-dark-icons-gtk` package in the AUR if you prefer a GTK-focused gruvbox icon set:
+To install the [Gruvbox Plus icon pack](https://www.gnome-look.org/p/1961046) by SylEleuth:
 ```bash
-omarchy pkg aur add gruvbox-dark-icons-gtk
+mkdir -p ~/.icons ~/.local/share/icons
+cd /tmp && curl -LO "https://github.com/SylEleuth/gruvbox-plus-icon-pack/releases/download/v6.6.0/gruvbox-plus-icon-pack-6.6.0.zip"
+unzip -q gruvbox-plus-icon-pack-6.6.0.zip
+cp -r Gruvbox-Plus-Dark ~/.icons/
+cp -r Gruvbox-Plus-Dark ~/.local/share/icons/
 ```
-Then set `icons.theme` to `gruvbox-dark`.
 
-## Wallpaper
-
-`backgrounds/1-skyrim-dragon.jpg` — A dark, fiery Skyrim dragon scene that complements the palette.
+### Fallback to Stock Icons
+If Gruvbox Plus is not installed, switch `icons.theme` to stock `Yaru-purple` or `Yaru-dark`:
+```bash
+echo "Yaru-purple" > ~/.config/omarchy/themes/linkarzu-omarchy/icons.theme
+omarchy theme set linkarzu-omarchy
+```
 
 ## Installation
 
