@@ -1,6 +1,6 @@
--- Inactive border: muted, desaturated grayish green matching #37f499 palette tone
+-- Inactive border: refined emerald slate depth
 local active_border_color = "#37f499"
-local inactive_border_color = "rgb(1c3d2d)"
+local inactive_border_color = "rgb(20, 46, 34)"
 
 hl.config({
   general = {
