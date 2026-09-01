@@ -1,9 +1,9 @@
 # Omarchy shell surfaces customized for Linkarzu theme
 
 [bar]
-background       = "#0d1116"
-background-alpha = 0.90
-text             = "#ebfafa"
+background       = "#070b10"
+background-alpha = 0.94
+text             = "#04d1f9"
 active           = "#37f499"
 scale-with-font  = true
 size-horizontal  = 26
