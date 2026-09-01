@@ -1,0 +1,126 @@
+# Omarchy shell surfaces customized for Linkarzu theme
+
+[bar]
+background       = "#0d1116"
+background-alpha = 1.0
+text             = "#ebfafa"
+active           = "#37f499"
+scale-with-font  = true
+size-horizontal  = 26
+size-vertical    = 28
+
+[hyprland]
+active-border            = "#37f499"
+active-border-foreground = "#37f499"
+
+[controls]
+normal-color        = "#ebfafa"
+normal-fill-alpha   = 0.04
+normal-border       = "#37f499"
+normal-border-width = 1
+normal-border-alpha = 0.25
+
+hover-cursor-color        = "#37f499"
+hover-cursor-fill-alpha   = 0.15
+hover-cursor-border       = "#37f499"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.8
+
+focus-color        = "#37f499"
+focus-fill-alpha   = 0.15
+focus-border       = "#37f499"
+focus-border-width = 1
+focus-border-alpha = 0.8
+
+selected-color        = "#37f499"
+selected-fill-alpha   = 0.25
+selected-border       = "#37f499"
+selected-border-width = 1
+selected-border-alpha = 1.0
+
+pressed-fill-alpha   = 0.35
+selection-fill-alpha = 0.45
+
+[popups]
+background       = "#0d1116"
+background-alpha = 1.0
+text             = "#ebfafa"
+border           = "#37f499"
+border-alpha     = 1.0
+
+[tooltip]
+background       = "#0d1116"
+background-alpha = 0.97
+text             = "#ebfafa"
+border           = "#37f499"
+border-alpha     = 0.6
+
+[notifications]
+background       = "#0d1116"
+background-alpha = 1.0
+text             = "#ebfafa"
+border           = "#37f499"
+border-alpha     = 1.0
+countdown        = "#37f499"
+
+[launcher]
+background                = "#0d1116"
+background-alpha          = 0.96
+text                      = "#ebfafa"
+border                    = "#37f499"
+border-alpha              = 1.0
+scrim                     = "#0d1116"
+scrim-alpha               = 0.6
+selected-background       = "#314154"
+selected-background-alpha = 0.85
+selected-text             = "#37f499"
+selected-border           = "#37f499"
+selected-border-alpha     = 0.8
+
+[menu]
+background                = "#0d1116"
+background-alpha          = 1.0
+text                      = "#ebfafa"
+border                    = "#37f499"
+border-alpha              = 1.0
+scrim                     = "#0d1116"
+scrim-alpha               = 0.6
+selected-background       = "#314154"
+selected-background-alpha = 0.85
+selected-text             = "#37f499"
+selected-border           = "#37f499"
+selected-border-alpha     = 0.8
+
+[polkit]
+background       = "#0d1116"
+background-alpha = 1.0
+text             = "#ebfafa"
+text-error       = "#f16c75"
+border           = "#37f499"
+border-error     = "#f16c75"
+border-alpha     = 1.0
+scrim            = "#0d1116"
+scrim-alpha      = 0.6
+accent           = "#37f499"
+
+[lock]
+background       = "#0d1116"
+background-alpha = 0.85
+text             = "#ebfafa"
+placeholder      = "#a5afc2"
+text-error       = "#f16c75"
+border           = "#37f499"
+border-active    = "#37f499"
+border-error     = "#f16c75"
+border-alpha     = 1.0
+selection        = "#37f499"
+selection-alpha  = 0.45
+
+[image-picker]
+scrim                   = "#0d1116"
+scrim-alpha             = 0.6
+text                    = "#ebfafa"
+selected-border         = "#37f499"
+selected-border-alpha   = 1.0
+unselected-border       = "#314154"
+unselected-border-alpha = 0.5
